@@ -56,7 +56,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="sticky top-0 z-50 bg-white/30 backdrop-blur-sm rounded-b-[36px] shadow-[0_10px_20px_rgba(0,0,0,0.12),_0_4px_6px_rgba(0,0,0,0.08)]"
+      className="sticky top-0 z-500 bg-white/30 backdrop-blur-sm rounded-b-[36px] shadow-[0_10px_20px_rgba(0,0,0,0.12),_0_4px_6px_rgba(0,0,0,0.08)]"
     >
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-4 flex justify-between items-center">
         {/* Logo */}
