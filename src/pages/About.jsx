@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-      <section className="w-full px-4 py-12 bg-gray-100">
+      <section className="w-full px-4 py-12 bg-white">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         
         {/* Image */}
