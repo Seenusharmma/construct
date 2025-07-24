@@ -1,11 +1,10 @@
-
 import React from 'react'
-import Carousel from '../components/Carousel'
+import GalleryHead from '../components/GalleryHead'
 
 const Gallery = () => {
   return (
     <div>
-      <Carousel/>
+      <GalleryHead/>
     </div>
   )
 }
