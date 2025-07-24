@@ -60,10 +60,12 @@ const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-6 md:px-10 py-4 flex justify-between items-center">
         {/* Logo */}
-        <Link to="/">
-          <h1 className="font-bold text-2xl sm:text-3xl leading-tight">
-            <span className="text-red-500">K</span>aran
-            <span className="text-red-500">E</span>nterprises
+        <Link to="/"> 
+        
+          <h1 className="font-bold text-2xl sm:text-3xl leading-tight flex hover:text-">
+            <img src="./logo.svg" alt="" height={40} width={40}/>
+            <span className="text-yellow-500">K</span>aran
+            <span className="text-yellow-500 ">E</span>nterprises
           </h1>
         </Link>
 
@@ -77,8 +79,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `${
                     isActive
-                      ? "border-b-2 border-red-500"
-                      : "text-gray-800 hover:text-red-500"
+                      ? "border-b-2 border-yellow-500"
+                      : "text-gray-800 hover:text-yellow-500"
                   } cursor-pointer transition-colors duration-300`
                 }
               >
@@ -93,7 +95,7 @@ const Navbar = () => {
           <button
             onClick={toggleMenu}
             aria-label="Toggle Menu"
-            className="text-gray-800 hover:text-red-500 transition-colors duration-300"
+            className="text-gray-800 hover:text-yellow-500 transition-colors duration-300"
           >
             {isOpen ? <HiX size={28} /> : <HiOutlineMenu size={28} />}
           </button>
@@ -120,8 +122,8 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `${
                   isActive
-                    ? "border-b-2 border-red-500"
-                    : "text-gray-800 hover:text-red-500"
+                    ? "border-b-2 border-yellow-500"
+                    : "text-gray-800 hover:text-yellow-500"
                 } cursor-pointer transition-colors duration-300`
               }
               onClick={() => setIsOpen(false)}
