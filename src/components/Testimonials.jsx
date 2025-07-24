@@ -26,20 +26,22 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className="bg-gray-100 py-12 px-4 md:px-20">
-      <div className="text-center mb-10">
+    <div className="bg-gray-100 py-16 px-4 md:px-20">
+      <div className="text-center mb-12">
         <h2 className="text-4xl font-bold mb-2">What Our Clients Say</h2>
         <p className="text-gray-600">Real feedback from real professionals.</p>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-3 sm:grid-cols-2">
+      <div className="grid gap-10 md:grid-cols-3 sm:grid-cols-2">
         {testimonials.map((item, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.3 }}
-            className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(0,0,0,0.15)" }}
+            transition={{ type: "spring", stiffness: 100, delay: index * 0.2 }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="bg-white p-6 rounded-2xl shadow-md cursor-pointer transition-transform"
           >
             <div className="flex items-center gap-4 mb-4">
               <img

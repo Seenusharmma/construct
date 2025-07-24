@@ -1,4 +1,6 @@
 import React from 'react'
+import ToggleSections from './ToggleSections'
+import ToggleSection from './ToggleSections'
 
 const HeroSection = () => {
   return (
@@ -18,6 +20,7 @@ const HeroSection = () => {
             <button className="bg-indigo-800 text-white px-6 py-3 rounded-md shadow hover:bg-indigo-700 transition">
               Contact US
             </button>
+            <ToggleSection/>
           </div>
 
           {/* Image Section */}
