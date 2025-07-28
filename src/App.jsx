@@ -7,13 +7,11 @@ import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import SplashCursor from './components/SplashCursor'
 
 const App = () => {
   return (
     
     <BrowserRouter>
-    <SplashCursor/>
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}></Route>
