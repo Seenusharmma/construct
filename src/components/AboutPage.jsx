@@ -27,7 +27,7 @@ const AboutPage = () => {
       >
         <div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Building the Future with Excellence
+            Build the Future with Excellence
           </h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto">
             We are a leading construction company delivering reliable, innovative, and sustainable infrastructure.
