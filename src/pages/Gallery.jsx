@@ -6,8 +6,8 @@ const Gallery = () => {
   return (
     <div>
       <GalleryHead />
-      <div style={{ height: "600px", position: "relative" }}>
-        <CircularGallery
+      <div style={{ height: "600px", position: "relative" }} >
+        <CircularGallery 
           bend={3}
           textColor="#ffffff"
           borderRadius={0.05}

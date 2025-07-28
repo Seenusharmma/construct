@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import BlurText from "./BlurText";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -94,9 +95,14 @@ const GalleryHead = () => {
 
   return (
     <div className="bg-green-50 min-h-screen text-black p-6 md:p-12 ">
-      <h1 className="text-4xl md:text-6xl font-bold text-center text-black animate-fadeInUp hover:text-yellow-400 pb-3">
-        Our Major Projects
-      </h1>
+      <BlurText
+  text="Our Major Projects"
+  delay={150}
+  animateBy="words"
+  direction="top"
+  // onAnimationComplete={handleAnimationComplete}
+  className="flex items-center justify-center text-2xl mb-8 font-bold"
+/>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((item, index) => (
           <div
