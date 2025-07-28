@@ -1,6 +1,6 @@
-import React from 'react'
-import ToggleSections from './ToggleSections'
-import ToggleSection from './ToggleSections'
+import React from "react";
+import ToggleSections from "./ToggleSections";
+import ToggleSection from "./ToggleSections";
 
 const HeroSection = () => {
   return (
@@ -9,8 +9,14 @@ const HeroSection = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Text Section */}
           <div className="space-y-6">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-800 leading-tight">
-              Our <br /> for <span className="text-indigo-800">Company.</span>
+            <h2
+              className="text-4xl sm:text-5xl font-normal text-gray-800 leading-tight"
+              style={{
+                fontFamily: "'Cinzel', serif",
+                letterSpacing: "0.1em",
+              }}
+            >
+              Our <span>Company.</span>
             </h2>
             <p className="text-gray-600 text-lg">
               M/S Karan Enterprises was established in the year 2013 and is a
@@ -20,7 +26,7 @@ const HeroSection = () => {
             <button className="bg-indigo-800 text-white px-6 py-3 rounded-md shadow hover:bg-indigo-700 transition">
               Contact US
             </button>
-            <ToggleSection/>
+            <ToggleSection />
           </div>
 
           {/* Image Section */}
@@ -42,7 +48,7 @@ const HeroSection = () => {
         <div className="max-w-7xl mx-auto mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center"></div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;

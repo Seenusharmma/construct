@@ -144,7 +144,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <nav className="hidden md:flex gap-6 lg:gap-10 items-center">
           <ul
-            className="flex gap-6 lg:gap-10 items-center text-base sm:text-lg md:text-xl font-semibold"
+            className="flex gap-6 lg:gap-10 items-center text-base sm:text-lg md:textmd font-thin"
             style={{ fontFamily: "'Poppins', sans-serif" }}
           >
             {routes.map((route, i) => (

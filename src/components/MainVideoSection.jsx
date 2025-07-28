@@ -907,7 +907,7 @@ export default function MainVideoSection() {
             gap: "1rem",
           }}
         >
-          {["M/S", "Karan", "Enterprises"].map((rowId) => (
+          {["M  /S", "Karan", "Enterprises"].map((rowId) => (
             <div
               className="text-row"
               data-row-id={rowId}
