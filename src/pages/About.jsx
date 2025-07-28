@@ -5,6 +5,7 @@ import BrandCollaboration from '../components/BrandCollaboration'
 const About = () => {
   return (
     <div>
+     
       <AboutPage/>
       <BrandCollaboration/>
     </div>
